@@ -39,7 +39,7 @@ Functions are a way to encapsulate program functionality.
     }
 ```
 
-![Anatomy of a function](./fn_anatomy.jpeg)
+![Anatomy of a function](../fundamentals/fn_anatomy.jpeg)
 
 ### Calling a function
 
@@ -48,7 +48,7 @@ Functions are a way to encapsulate program functionality.
     let y = add(x, 8);
 ```
 
-![How To Call A Function](./calling_a_function.jpeg)
+![How To Call A Function](../fundamentals/calling_a_function.jpeg)
 
 ### The Println Macro
 
@@ -67,4 +67,4 @@ To supply a variable data to the `println` macro we use the `{}`
 
 ## Control Flow
 
-Code is executed line by line. When actions are performed control flow may change. Specific conditions can change control flow such as ```if```, ```else``` ```else if```
+Code is executed line by line. When actions are performed control flow may change. Specific conditions can change control flow such as `if`, `else` `else if`
