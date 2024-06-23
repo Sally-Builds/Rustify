@@ -10,6 +10,38 @@ Anthing can be represented with binary
 - Character - `'c'`, `'C'`, `'6'`, `'$'`
 - String - `"Hello world"`,
 
+#### Integer Types
+
+- Signed integers:
+  - 8-bit `i8`
+  - 16-bit `i16`
+  - 32-bit `i32`
+  - 64-bit `i64`
+  - 128-bit `i128`
+  - arch `isize`
+
+* UnSinged integers:
+
+  - 8-bit `u8`
+  - 16-bit `u16`
+  - 32-bit `u32`
+  - 64-bit `u64`
+  - 128-bit `u128`
+  - arch `usize`
+
+  #### Floating point
+
+  - `f32`
+  - `f64` **default** (capable of more precision)
+
+  #### Integer Literals
+
+  - Decimal `98_222`
+  - Hex `0xff`
+  - Octal `0o77`
+  - Byte (u8 only) `0b1011_0100`
+  - Binary `b'A'`
+
 ## Variables
 
 Variables are a way to assign data to a temporary memory location. Variables can be set to any value or type.
