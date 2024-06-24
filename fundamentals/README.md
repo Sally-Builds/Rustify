@@ -1,4 +1,4 @@
-# Data Types
+# Rust Fundamentals
 
 ## Basic Data Types
 
