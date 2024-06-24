@@ -4,11 +4,9 @@ struct Person {
     color: String,
 }
 
-impl Person {
-    fn print(&self) {
-        println!("Name is {:?} and favorite color is {:?}", self.name, self.color);
+    fn print(data: &str) {
+        println!("{:?}", data);
     }
-}
 
 fn main () {
     let persons = vec![
@@ -29,9 +27,11 @@ fn main () {
         },
     ];
 
-    for person in &persons {
+    for person in persons {
         if person.age <= 10 {
-            person.print();
-        }
-    }
+            print(&person.name);
+            print(&person.color);
+        };
+    };
+
 }
