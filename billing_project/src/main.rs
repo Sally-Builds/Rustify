@@ -29,4 +29,98 @@
 // * A vector is the easiest way to store the bills at stage 1, but a
 //   hashmap will be easier to work with at stages 2 and 3.
 
-fn main() {}
+use std::io::{self, Write};
+
+enum Menu {
+    ADD,
+    VIEW,
+    EXIT,
+}
+
+impl Menu {
+    fn print(&self) {
+        match self {
+            Self::ADD => println!("1) Add Bill"),
+            Self::VIEW => println!("2) View Bills"),
+            Self::EXIT => println!("3) Quit")
+        }
+    }
+}
+
+#[derive(Debug)]
+struct Bill {
+    name: String,
+    amount: i32,
+}
+
+
+fn print_menu () {
+    println!("Please choose an option below");
+    println!("1) Add Bill");
+    println!("2) View Bills");
+    println!("3) Exit");
+}
+
+fn add(bills: &mut Vec<Bill>){
+    print!("Enter Bill name: ");
+    io::stdout().flush().unwrap();
+    let mut buffer = String::new();
+    io::stdin().read_line(&mut buffer).expect("Error getting reading input");
+
+    let name = buffer.trim().to_string();
+
+    print!("Enter Bill amount: ");
+    io::stdout().flush().unwrap();
+    let mut buffer2 = String::new();
+    io::stdin().read_line(&mut buffer2).expect("Error getting reading input");
+
+    let amount: i32 = match buffer2.trim().parse() {
+        Ok(num) => num,
+        Err(_) => {
+            println!("Provide a number");
+            return
+        }
+    };
+
+    let bill = Bill{name, amount};
+
+    bills.push(bill);
+    println!("bill added");
+}
+
+
+fn main() {
+
+
+    let mut bills: Vec<Bill> = vec![];
+
+
+    loop {
+        print_menu();
+
+        let mut buffer = String::new();    
+        io::stdin().read_line(&mut buffer).expect("Error reading file");  
+
+        let menu_option: i32 = match buffer.trim().parse() {
+            Ok(value) => value,
+            Err(_) => {
+                println!("Invalid Option");
+                continue;
+            }
+        };
+
+        match menu_option {
+            1 => add(&mut bills),
+            2 => println!("{:?}", bills),
+            3 => {
+                println!("Application Shutting Down...");
+                return;
+            },
+            _ => {
+                println!("Invalid Option");
+                continue;
+            }
+        }
+    }
+
+}
