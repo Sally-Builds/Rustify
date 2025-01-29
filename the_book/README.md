@@ -11,3 +11,4 @@ This will be my summary, notes, thought process and mind map of the rust program
 2. **[Programming A Guessing Game](programming_a_guessing_game/README.md)**
 3. **[Common Programming Concepts](commom_programming_concepts/README.md)**
 4. **[Understanding Ownership](understanding_ownership/README.md)**
+5. **[Using Structs to Structure Related Data](using_structs_to_structure_related_data/README.md)**
