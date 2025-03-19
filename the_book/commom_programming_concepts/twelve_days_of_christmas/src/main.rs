@@ -29,4 +29,8 @@ fn main() {
         }
         println!("");
     }
+
+    let x: (i32, i32, i32) = (10, 11, 12);
+    let (y, z, m) = x;
+    println!("{}", m);
 }

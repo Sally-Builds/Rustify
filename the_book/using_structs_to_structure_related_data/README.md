@@ -112,7 +112,7 @@ let user2 = {
 - it will be nice to be able to print an instance of a struct while we are debugging our program and see the values for all its fields.
 
 ```rs
-  println!("user 1 is {}");
+  println!("user 1 is {}", user1);
 ```
 
 - The code above wont work. The `println!` macro can do many kinds of formatting and by default the curly brackets tell `printlin!` to use a formatting know as `Display` which is output intended for direct consumption.

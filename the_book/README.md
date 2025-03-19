@@ -15,3 +15,5 @@ This will be my summary, notes, thought process and mind map of the rust program
 6. **[Enums and Pattern Matching](enums_and_pattern_matching/README.md)**
 7. **[Using Modules to Reuse and Organize Code](using_modules_to_reuse_and_organize_code/README.md)**
 8. **[Common Collections](common_collections/README.md)**
+9. **[Error Handling](error_handling/README.md)**
+10. **[Generic Types, Traits & Lifetimes](generics_traits_&_lifetimes/README.md)**

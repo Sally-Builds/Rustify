@@ -90,9 +90,9 @@
 
 - When we assign `s1` to `s2`, the string data is copied, meaning we copy the pointer, length and capacity that are on the stack. **We do not copy the actual data on the heap that the pointer refers to**.
 
-* Earlier, we said that when a variable goes out of scope, Rust automatically calls a drop function that cleans up the heap memory for the variable. but with the string example both pointers of the variable point to the same location.**This is a problem because when s1 and s2 goes out of scope they will try to gree some memoory**
+* Earlier, we said that when a variable goes out of scope, Rust automatically calls a drop function that cleans up the heap memory for the variable. but with the string example both pointers of the variable point to the same location.**This is a problem because when s1 and s2 goes out of scope they will try to free same memory**
 
-- This is an error known as \*_Double Free Error_ and this is a memory safety bug. Freeing memory twice can lead to memory corruption, which can potentially lead to security vulnerabilities.
+- This is an error known as **Double Free Error** and this is a memory safety bug. Freeing memory twice can lead to memory corruption, which can potentially lead to security vulnerabilities.
 
 - The way Rust ensures memory safety for this scenario is that instead of trying to copy the allocated memory, Rust considers `s1` to no longer be valid and therefore Rust does no longer need to free anything when `s1` goes out of scope.
 - Rust invalidates the first variable, this is known as a **move** in Rust. In this example we say that `s1` was moved to `s2`. That solves our problem with only `s2` valid, so that when it goes out of scope, it alone will free the memory and we are done.
