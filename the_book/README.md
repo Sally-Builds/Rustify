@@ -18,3 +18,5 @@ This will be my summary, notes, thought process and mind map of the rust program
 9. **[Error Handling](error_handling/README.md)**
 10. **[Generic Types, Traits & Lifetimes](generics_traits_n_lifetimes/README.md)**
 11. **[Writing Automated Tests](writing_automated_tests/README.md)**
+12. **[An I/O Project: Building a Command Line Program](https://github.com/Sally-Builds/minigrep)**
+13. **[Functional Language Features: Iterators & Closures](writing_automated_tests/README.md)**
