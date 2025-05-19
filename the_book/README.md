@@ -20,3 +20,5 @@ This will be my summary, notes, thought process and mind map of the rust program
 11. **[Writing Automated Tests](writing_automated_tests/README.md)**
 12. **[An I/O Project: Building a Command Line Program](https://github.com/Sally-Builds/minigrep)**
 13. **[Functional Language Features: Iterators & Closures](writing_automated_tests/README.md)**
+14. **[More About Cargo and Crates.io](more_on_cargo/README.md)**
+15. **[Smart Pointers](smart_pointers/README.md)**
