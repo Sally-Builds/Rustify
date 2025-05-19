@@ -23,3 +23,4 @@ This will be my summary, notes, thought process and mind map of the rust program
 14. **[More About Cargo and Crates.io](more_on_cargo/README.md)**
 15. **[Smart Pointers](smart_pointers/README.md)**
 16. **[Fearless Concurrency](fearless_concurrency/README.md)**
+17. **[Object-Oriented Programming Features of Rust](oop_features_of_rust/README.md)**
