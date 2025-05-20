@@ -24,3 +24,4 @@ This will be my summary, notes, thought process and mind map of the rust program
 15. **[Smart Pointers](smart_pointers/README.md)**
 16. **[Fearless Concurrency](fearless_concurrency/README.md)**
 17. **[Object-Oriented Programming Features of Rust](oop_features_of_rust/README.md)**
+18. **[Pattern and Matching](pattern_and_matching/README.md)**
